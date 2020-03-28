@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <main class="container {% if site.color_scheme %}{{ site.color_scheme }}{% else %}avocado{% endif %}">
+      {% if page.title == "Home" %}
+      <header class="fadeInLeft animated">
+      {% else %}
+      <header>
+      {% endif %}
+        <div>
+          <a href="{{ site.url }}" id="logo" title="{{ site.title }}"
+             style="background-image: url({{ '/assets/images/logo.png' | relative_url }});"></a>
+        </div>
+
+        {% include navigation.html %}
+      </header>
+
+      {{ content }}
+
+      <footer>
+        <p>
+          This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.en_US">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+        </p>
+		<p><a href="https://github.com/aigarsdz/brume">Jekyll theme Brume</a> by Algars Dzerviniks.</p>
+      </footer>
+    </main>
+
+    <!-- scripts -->
+  </body>
+</html>

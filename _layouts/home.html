@@ -1,0 +1,18 @@
+---
+layout: default
+title: Home
+---
+
+<section class="archive">
+	<ul>
+{% for post in site.posts reversed %}
+
+
+  <li>
+    <a href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title }}</a>
+  </li>
+
+
+  {% endfor %}
+  </ul>
+</section>

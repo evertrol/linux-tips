@@ -1,0 +1,19 @@
+title: Linux introdctory tips
+author: Evert Rol
+description: An introduction to Linux with short and simple tips.
+
+highlighter: null
+permalink: /:title
+
+url:
+baseurl:
+
+# Custom options:
+# color_scheme: azul|ruby|amber|avocado
+# color_scheme: avocado
+
+assets:
+  sources:
+    - assets/images
+    - assets/css
+    - assets/js
